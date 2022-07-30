@@ -90,7 +90,7 @@ export default function () {
                     I used to be frightened of dying
                     I used to think death was the end
                     But that was before
-                    I'm not scared anymore
+                    Im not scared anymore
                     I know that my soul will transcend                   
                 </p>
 
@@ -100,7 +100,7 @@ export default function () {
                     My questioning mind
                     Has helped me to find
                     The meaning in my life again
-                    Victoria's real
+                    Victorias real
                     I finally feel                  
                 </p>
                 <p>
@@ -131,14 +131,14 @@ export default function () {
                     And You're only given one shot
                     But could there be more
                     Have I lived before
-                    Or could this be all that we've got?                   
+                    Or could this be all that we ve got?                   
                 </p>
 
                 <p>
                     I used to be frightened of dying
                     I used to think death was the end
                     But that was before
-                    I'm not scared anymore
+                    Im not scared anymore
                     I know that my soul will transcend                   
                 </p>
 
@@ -148,7 +148,7 @@ export default function () {
                     My questioning mind
                     Has helped me to find
                     The meaning in my life again
-                    Victoria's real
+                    Victorias real
                     I finally feel                  
                 </p>
                 <p>
