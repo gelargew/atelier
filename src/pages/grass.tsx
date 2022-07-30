@@ -2,7 +2,7 @@ import s from '../styles/typographyLanding.module.css'
 import gsap, { Expo } from 'gsap'
 import { useEffect, useRef } from 'react'
 
-export default function () {
+export default function GrassPage () {
     const textWrapper = useRef<HTMLDivElement>(null!)
     const texts = gsap.utils.selector(textWrapper)
     const textContainer = useRef<HTMLDivElement>(null!)
