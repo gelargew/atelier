@@ -82,8 +82,8 @@ export default function () {
                 </p>
 
                 <p>
-                    They say "Life is too short"
-                    "The here and the now"           
+                    They say Life is too short
+                    The here and the now          
                 </p>
 
                 <p>
@@ -126,9 +126,9 @@ export default function () {
                 </p>
 
                 <p>
-                    They say "Life is too short"
-                    "The here and the now"
-                    And "You're only given one shot"
+                    They say Life is too short
+                    The here and the now
+                    And You're only given one shot
                     But could there be more
                     Have I lived before
                     Or could this be all that we've got?                   
