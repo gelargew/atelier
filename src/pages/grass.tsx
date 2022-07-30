@@ -128,7 +128,7 @@ export default function () {
                 <p>
                     They say Life is too short
                     The here and the now
-                    And You're only given one shot
+                    And You re only given one shot
                     But could there be more
                     Have I lived before
                     Or could this be all that we ve got?                   
