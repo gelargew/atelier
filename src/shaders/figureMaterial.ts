@@ -41,12 +41,13 @@ export const FigureMaterial = shaderMaterial(
         vec2 res = uRes* dpr;
         vec2 st = gl_FragCoord.xy / res.xy - vec2(0.5);
         // tip: use the following formula to keep the good ratio of your coordinates
-        st.y *= uRes.y / uRes.x;
+        st.y *= res.y / res.x;
     
         // We readjust the mouse coordinates
-        vec2 mouse = uMouse * -0.5;
+        vec2 mouse = (uMouse * -.6)+.1;
+
         // tip2: do the same for your mouse
-        mouse+= 0.1;
+        mouse.y*= res.y/res.x;
 
         //noise
 
