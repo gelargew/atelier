@@ -22,6 +22,7 @@ import * as THREE from "three";
 import styles from "../styles/Home.module.css";
 import { FigureMaterial } from "../shaders/figureMaterial";
 import Head from "next/head";
+import { Loader } from "../components/Loader";
 
 const PERSPECTIVE = 800;
 
@@ -68,7 +69,7 @@ const Home: NextPage = () => {
           <Canvas gl={{ alpha: true }}>
             <ambientLight />
             <Camera />
-            <Suspense fallback={null}>
+            <Suspense fallback={<Loader />}>
               <Figure
                 imageURL={DATAS[pic].imgURL}
                 hoverURL={DATAS[pic].hoverURL}
