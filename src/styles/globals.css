@@ -9,8 +9,12 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background: black;
+  width: 100%;
+  height: 100%;
+  scroll-behavior: initial;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-
 a {
   color: inherit;
   text-decoration: none;
@@ -20,8 +24,16 @@ a {
   box-sizing: border-box;
 }
 
-
-main>section {
+main > section {
   min-height: 100vh;
 }
 
+.picsum {
+  background-image: url(https://picsum.photos/1024/720?grayscale);
+  background-size: cover;
+}
+
+.fullscreenSections > section {
+  width: 100%;
+  min-height: 100vh;
+}
