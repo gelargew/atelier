@@ -54,16 +54,14 @@ const Home: NextPage = () => {
   const [pic, setPic] = useState(Math.floor(Math.random() * DATAS.length));
 
   const next = () => {
-    if (pic+1 >= DATAS.length) setPic(0)
-    else setPic(pic + 1)
+    if (pic + 1 >= DATAS.length) setPic(0);
+    else setPic(pic + 1);
   };
 
   return (
     <div className="relative w-screen flex justify-center place-items-center">
       <Head>
-        <title>
-          atelier | sheda
-        </title>
+        <title>atelier | sheda</title>
       </Head>
       <main className="relative w-full z-0 flex flex-col justify-center place-items-center ">
         <section className="w-full h-screen">
@@ -101,7 +99,7 @@ const Home: NextPage = () => {
           onClick={next}
           className="fixed z-20 text-xl bottom-10 right-40 px-10 py-1 bg-white"
         >
-          NEXT >>
+          NEXT &gt;&gt;
         </button>
       </main>
     </div>
@@ -123,8 +121,14 @@ const Figure = ({
   const { viewport, mouse } = useThree();
   const mouseVec = new THREE.Vector2(0, 0);
   const scale = useMemo<[x: number, y: number, z: number]>(() => {
-    console.log(image.image.width/image.image.height, viewport.width/viewport.height)
-    if (image.image.width / image.image.height > viewport.width/viewport.height)
+    console.log(
+      image.image.width / image.image.height,
+      viewport.width / viewport.height
+    );
+    if (
+      image.image.width / image.image.height >
+      viewport.width / viewport.height
+    )
       return [
         (viewport.height * image.image.width) / image.image.height,
         viewport.height,
