@@ -5,6 +5,7 @@ import {
   Plane,
   TorusKnot,
   useTexture,
+  Loader,
 } from "@react-three/drei";
 import { Canvas, extend, useFrame, useThree } from "@react-three/fiber";
 import type { NextPage } from "next";
@@ -22,7 +23,6 @@ import * as THREE from "three";
 import styles from "../styles/Home.module.css";
 import { FigureMaterial } from "../shaders/figureMaterial";
 import Head from "next/head";
-import { Loader } from "../components/Loader";
 
 const PERSPECTIVE = 800;
 
@@ -69,13 +69,14 @@ const Home: NextPage = () => {
           <Canvas gl={{ alpha: true }}>
             <ambientLight />
             <Camera />
-            <Suspense fallback={<Loader />}>
+            <Suspense fallback={null}>
               <Figure
                 imageURL={DATAS[pic].imgURL}
                 hoverURL={DATAS[pic].hoverURL}
               />
             </Suspense>
           </Canvas>
+          <Loader />
         </section>
         {/* <section className="h-screen w-full">
           <Canvas gl={{ alpha: true }}>
